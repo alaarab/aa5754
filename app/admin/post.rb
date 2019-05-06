@@ -4,8 +4,8 @@ ActiveAdmin.register Post do
 
   controller do
     def show
-    @post = Post.find(params[:id])
-    show! 
+      @post = Post.find(params[:id])
+      show! 
     end
   end
 
