@@ -1,16 +1,15 @@
 ActiveAdmin.register Post do
 
-	permit_params :comment
+  permit_params :comment
 
-	controller do
+  controller do
     def show
-      @post = Post.find(params[:id])
-      show! 
+    @post = Post.find(params[:id])
+    show! 
     end
-	end
+  end
 
-	show do |post|
-		active_admin_comments
-	end
-
+  show do |post|
+    active_admin_comments
+  end
 end
